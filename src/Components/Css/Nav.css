@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif !important;
+}
+:root
+{
+--main-color: #4fb2b2;
+--secound-color: #a4bf54;
+--third-color: #313231;
+}
+/* ----------------- Navigation ----------------------- */
+.navbar .dropdown-menu a.dropdown-item {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: 16px;
+  font-weight: 580;
+  transition: 0.3s;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.navbar .dropdown-menu a.dropdown-item:hover {
+  /* color: #FDC93B !important; */
+  color: var(--secound-color) !important;
+  transition: 0.3s;
+}
+/* .navbar-brand{
+  margin-left: 50px;
+} */
+.navbar .nav-item .nav-link {
+  text-decoration: none;
+  margin-right: 3rem;
+  color: rgb(21, 21, 100) !important;
+  font-size: 17px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar .nav-item .nav-link:hover {
+  transition: 0.3s;
+  color: var(--main-color) !important;
+}
+@media (min-width: 992px) {
+  .navbar .nav-item .nav-link{
+    width: 100%;
+    height: auto;
+    /* margin-right: 1.5rem; */
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .nav-item .nav-link{
+    width: 100vw;
+    height: auto;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar .nav-item .nav-link{
+    width: 100%;
+    height: auto;
+    /* margin-right: 1.5rem; */
+  }
+}
+#custom-button {
+  background-color: #4fb2b2; /* Change this to your desired normal background color */
+  color: #FFFFFF; /* Change this to your desired normal text color */
+  margin-left: -4px;
+  border-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+}
+#custom-button:hover {
+  background-color: var(--secound-color); /* Change this to your desired hover background color */
+  color: #FFFFFF; /* Change this to your desired hover text color */
+  border-color: transparent;
+}

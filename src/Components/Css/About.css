@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif !important;
+}
+:root
+{
+--main-color: #4fb2b2;
+--secound-color: #a4bf54;
+--third-color: #313231;
+}
+.cover-section1 {
+    background: url("../imgs/autoplaying-photo1.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+    height: 60vh; /* Adjust the height as needed */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 520;
+  }
+  #cover-text {
+    margin-bottom: 5rem;
+  }
+  #cover-text a{
+    text-decoration: none;
+    color: white;
+  }
+.text-center {
+    text-align: center;
+}
+/* Custom styles for h2 and p elements */
+.cover-section1 h2 {
+    font-size: 4rem; /* Set the font size for h2 to 2rem (32px) */
+}
+
+.cover-section1 p {
+    font-size: 1rem; /* Set the font size for p to 1rem (16px) */
+}
+/* Custom CSS to center the card  */
+ .center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .for{
+    flex-direction: column-reverse;
+  }
+  .img-fluid{
+    margin-bottom: 1.5em;
+  }
+}
+
+/* Custom CSS for styling */
+.section {
+  padding: 20px; /* Add spacing inside sections */
+  border: 2px solid var(--main-color); /* Border color */
+  margin-bottom: 20px; /* Add spacing between sections */
+}
+/* Custom CSS to center the card */
+/* ----------------- Scroll-Bar-Adjustments ----------------------- */
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color); /* Change this to your desired color */
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secound-color); /* Change this to your desired color on hover */
+}
+/* ----------------- Scroll-Bar-Adjustments ----------------------- */

@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif !important;
+}
+:root
+{
+--main-color: #4fb2b2;
+--secound-color: #a4bf54;
+--third-color: #313231;
+}
+/* Hide the horizontal scroll bar at the bottom */
+body {
+  overflow-x: hidden !important;
+  margin-right: 0;
+}
+/* Or, if using a container */
+#container {
+  background-color: #ffffff; /* Set your desired background color */
+  z-index: 999999;
+}
+/* ----------------- Header ----------------------- */
+.info {
+  background-color: #0b3369;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  z-index: 999999999999999;
+}
+.info .box {
+  display: flex !important ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px !important;
+  z-index: 999999999999999;
+}
+.info .box h1 {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: aliceblue;
+  z-index: 999999999999999;
+}
+.link {
+  color: aliceblue;
+  text-decoration: none;
+  list-style: none;
+  z-index: 999999999999999;
+}
+.info .box a img {
+  cursor: pointer;
+  margin-bottom: 5px;
+  z-index: 999999999999999;
+}
+.facebook-icon svg {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 50px;
+  z-index: 999999999999999;
+}
+/* ----------------- AutoPlaying-Section-Adjustments ----------------------- */
+#carouselExampleAutoplaying {
+  max-width: auto; /* Adjust this value as needed */
+}
+
+/* Adjust the width and height of the carousel images */
+#carouselExampleAutoplaying .carousel-inner .carousel-item img {
+  max-width: auto; /* Ensures the image fits within the container */
+  height: 600px; /* Maintains the aspect ratio */
+  background-size: cover;
+}
+#welcome-letter h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#welcome-letter-2{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Vertically center the caption */
+  left: 0;
+  right: 0;
+  font-family: "Almarai", Sans-serif;
+  font-weight: 600;
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  text-align: center; /* Horizontally center the caption text */
+  padding: px; /* Optional: Add some padding for better visibility */
+  color: #fff6f6; /* Optional: Set text color */
+}
+.carousel-caption h5 {
+  font-size: 3em;
+  font-style: normal;
+  /* text-transform: uppercase; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 520;
+}
+.carousel-caption p {
+  font-size: 3em;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 520;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+}
+.sticky-carousel {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 0; /* Adjust the z-index as needed */
+  background-color: white; /* Set the desired background color */
+}
+@media (max-width: 576px) {
+  #carouselExampleAutoplaying h5 {
+    font-size: 2rem; /* Adjust the font size as needed for small screens */
+  }
+  #welcome-letter h5 {
+    letter-spacing: normal;
+  }
+}
+
+/* ----------------- PRESIDENT-Section-Adjustments ----------------------- */
+/* Flexbox container */
+.president-box {
+  margin: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+/* Style for the dean's photo */
+.president-photo {
+  flex: 1;
+  width: 20rem;
+  height: auto;
+  /* margin-right: 5em !important; */
+  /* margin-left: 5em !important; */
+  margin-top: 1em;
+}
+/* Style for the dean's message */
+.president-word {
+  flex: 2;
+}
+.president-word h5 {
+  font-size: 17px;
+  font-weight: lighter;
+}
+/* Style for the president's photo (optional) */
+.president-photo img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-bottom: 4rem;
+}
+@media (max-width: 576px) {
+  .president-photo img {
+    max-width: 70%; 
+    margin-right: 10em !important;
+  }
+}
+@media (min-width: 390px){
+  .president-photo{
+     margin-left: 0;
+  }
+}
+/* ----------------- Statistic-Section-Adjustments ----------------------- */
+/* Style for the statistics container */
+#statistic {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  max-width: 100%;
+  margin: auto; /* Center the container horizontally */
+}
+/* Style for each statistic item */
+.statistic-item {
+  text-align: center;
+}
+/* Style for the statistic number (e.g., 13,474) */
+.statistic-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px; /* Add some spacing between number and label */
+}
+/* Style for the statistic label (e.g., Staff) */
+.statistic-label {
+  font-size: 14px;
+}
+/* Style for the image icon */
+.statistic-icon {
+  width: 70px; /* Adjust the width and height as needed */
+  height: autopx;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+}
+/* ----------------- Youtube-Section-Adjustments ----------------------- */
+.youtube-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.youtube-video {
+  flex: 1;
+  margin-right: 20px;
+}
+.article {
+  flex: 2;
+}
+/* Style for the horizontal line */
+.line {
+  border-top: 2px solid var(--main-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#youtube-video {
+  margin-bottom: 20px;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .youtube-video iframe {
+    width: 100%;
+    height: 15rem;
+  }
+}
+ /* @media (max-width: 576px) {
+  
+}  */
+
+/* @media (min-width: 768px) {
+
+} */
+
+
+/* @media (min-width: 992px) {
+
+} */
+
+@media (min-width: 1200px) {
+  .youtube-video iframe{
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 1400px) {
+
+} */
+/* ----------------- News-Section-Adjustments ----------------------- */
+.bg-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image img {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.bg-image:hover img {
+  opacity: 0.7;
+}
+
+.bg-image:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--main-color), var(--second-color));
+  transition: opacity 600ms ease;
+  z-index: -1;
+}
+
+
+
+/* Custom CSS for card title */
+.card-title1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--third-color);
+}
+/* Custom CSS for card text */
+.card-text1 {
+  color: #7e8890;
+}
+.container {
+  margin-top: 50px;
+}
+#news-cards .card{
+  box-shadow: 0px 10px 0px 0px var(--main-color);
+  transition: all 0.5s;
+}
+#news-cards .card:hover{
+  box-shadow: 0px 0.2em 6px 0px var(--main-color);
+  transform: translatey(-0.7em);
+  transition: all 0.5s;
+}
+@media (max-width: 576px) {
+  #news-cards .card{
+    margin-bottom: 25px;
+  }
+} 
+.card-title1 {
+  height: 150px; /* Set a fixed height for the card titles */
+  text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+  position: relative; /* Position for the "Read More" link */
+}
+.card-text1{
+  margin-top: 2em;
+}
+/* ----------------- Scroll-Bar-Adjustments ----------------------- */
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color); /* Change this to your desired color */
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secound-color); /* Change this to your desired color on hover */
+}
+/* ----------------- Scroll-Bar-Adjustments ----------------------- */

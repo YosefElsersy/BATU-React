@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif !important;
+}
+:root
+{
+--main-color: #4fb2b2;
+--secound-color: #a4bf54;
+--third-color: #313231;
+}
+/* ----------------- Header ----------------------- */
+.info {
+  background-color: #0b3369;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999999999999999;
+}
+.info .box {
+  display: flex !important ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px !important;
+  z-index: 999999999999999;
+}
+.info .box h1 {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: aliceblue;
+  z-index: 999999999999999;
+}
+.link {
+  color: aliceblue;
+  text-decoration: none;
+  list-style: none;
+  z-index: 999999999999999;
+}
+.info .box a img {
+  cursor: pointer;
+  margin-bottom: 5px;
+  z-index: 999999999999999;
+}
+.facebook-icon svg {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 50px;
+  z-index: 999999999999999;
+}
+nav img {
+  width: 200px;
+  cursor: pointer;
+}
+/* Normal state styles */
+.facebook-icon a img {
+  width: 2rem;
+  height: auto;
+  margin-right: 3rem;
+  transition: filter 0.3s; /* Add a smooth transition effect */
+}
+/* Hover state styles */
+.facebook-icon a img:hover {
+  filter: brightness(0.8); /* Darken the icon when hovered */
+}
