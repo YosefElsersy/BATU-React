@@ -78,6 +78,7 @@
   color: #FFFFFF; /* Change this to your desired normal text color */
   margin-left: -4px;
   border-color: transparent;
+  border-radius: none !important;
   transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
 }
 #custom-button:hover {
