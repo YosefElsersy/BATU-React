@@ -13,6 +13,12 @@
 --third-color: #313231;
 }
 /* ----------------- Navigation ----------------------- */
+.navbar{
+  border-radius: 0;
+}
+.navbar .dropdown-menu {
+  border-radius: 0;
+}
 .navbar .dropdown-menu a.dropdown-item {
   text-decoration: none;
   color: rgb(21, 21, 100);
