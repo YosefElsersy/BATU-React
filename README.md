@@ -2,6 +2,9 @@
 
 This project showcases a dynamic, University web application built using React.js, integrating i18n for internationalization, styled with CSS and ReactStrap, and navigated using ReactRouterDom. It's designed to deliver a seamless, user-friendly experience across various languages, demonstrating the power and flexibility of React and associated technologies.
 
+![Screenshot_4](https://github.com/YosefElsersy/BATU-React/assets/124294506/0aa760ee-f168-4e74-a070-91fe4e1da1d1)
+
+
 ## Features
 
 - **Internationalization with i18n:** Supports multiple languages, making the application accessible to a global audience.
