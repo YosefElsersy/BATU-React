@@ -49,4 +49,3 @@ We welcome contributions to make this project even better. Whether it's feature 
 
 ---
 
-This template provides a comprehensive overview that can be customized with the details of your project. Make sure to replace placeholders (like URLs and project names) with your specific project's information.
