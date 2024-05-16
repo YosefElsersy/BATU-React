@@ -27,11 +27,11 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/your-username/your-project-name.git
+   git clone https://github.com/YosefElsersy/BATU-React.git
    ```
 2. **Navigate to the project directory:**
    ```
-   cd your-project-name
+   cd BATU-React
    ```
 3. **Install dependencies:**
    ```
